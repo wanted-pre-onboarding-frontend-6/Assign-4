@@ -145,9 +145,10 @@ $ npm run start
 
 ## 📌 Best Practice
 
-<!-- ### 💡 React Query 채택 이유
+### 💡 의존성 부여
 
-fetching, caching, user state 업데이트 등을 리액트 애플리케이션에서 처리할 때 편리하고, 이번 과제의 요구 사항인 infinite scroll 구현 기능(useInfiniteQuery) 또한 제공하기 때문에 채택했습니다. -->
+의존성 부여를 이용하여 클래스 내부에서 가지고 있는 것이 아니라, 클래스를 생성할 때 외부에서 주입하는 식으로 변경하였습니다.
+이에따라 연관된 동작을 쉽게 변경해서 다양하게 사용할 수 있습니다.
 
 ### 💡 styled components 스타일 코드 컴포넌트 내에 배치
 
