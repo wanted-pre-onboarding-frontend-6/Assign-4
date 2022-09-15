@@ -6,7 +6,7 @@
 
 ## 📌 배포
 
- url
+https://github-issue-list-fe-5.netlify.app/
 <br />
 
 ## 📌 프로젝트 설치 및 시작
