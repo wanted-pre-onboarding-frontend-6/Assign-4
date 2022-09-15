@@ -1,50 +1,154 @@
-<<<<<<< HEAD
-# wanted-pre-onbording-assign-4-Public
-=======
-# Getting Started with Create React App
+# angular-cli의 이슈 목록과 상세 내용을 확인하는 웹 사이트 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 프로젝트 소개
 
-## Available Scripts
+특정 깃헙 레파지토리 angular-cli의 이슈 목록과 상세 내용을 확인하는 웹 사이트 구축
 
-In the project directory, you can run:
+## 📌 배포
 
-### `npm start`
+ url
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📌 프로젝트 설치 및 시작
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### 프로젝트 클론
 
-### `npm test`
+```shell
+$ git clone https://github.com/wanted-pre-onboarding-frontend-6/Assign-4.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 패키지 설치
 
-### `npm run build`
+```shell
+$ npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 서버 실행
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell
+$ npm run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📌 팀원 소개
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<table align="center">
+<tr >
+<td align="center"><a href="https://github.com/LoggingCo"><img  src="https://avatars.githubusercontent.com/LoggingCo" width="100%"  height="50%"/></a></td>
+<td align="center"><a href="https://github.com/sming0112"><img src="https://avatars.githubusercontent.com/sming0112" width="100%"  height="50%"/></a></td>
+<td align="center"><a href="https://github.com/YSBINN"><img src="https://avatars.githubusercontent.com/YSBINN" width="100%" height="50%" /></a></td>
+<td align="center"><a href="https://github.com/Leejha"><img src="https://avatars.githubusercontent.com/Leejha" width="100%"  height="50%"/></a></td>
+<td align="center"><a href="https://github.com/seriparkdev"><img src="https://avatars.githubusercontent.com/seriparkdev" width="100%"  height="50%"/></a></td>
+</tr>
+<tr>
+<td align="center"><b>김성용(팀장)</b></td>
+<td align="center"><b>성민규</b></td>
+<td align="center"><b>임상빈</b></td>
+<td align="center"><b>이재하</b></td>
+<td align="center"><b>박세리</b></td>
+</tr>
+<tr>
+<td align="center"><b>FE Developer</b></td>
+<td align="center"><b>FE Developer</b></td>
+<td align="center"><b>FE Developer</b></td>
+<td align="center"><b>FE Developer</b></td>
+<td align="center"><b>FE Developer</b></td>
+</tr>
+</table>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📌프로젝트 과정 소개
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Git전략](https://github.com/wanted-pre-onboarding-frontend-6/Assign-1/wiki/Git-%EC%A0%84%EB%9E%B5)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[커밋 컨벤션 및 코딩 컨벤션](https://github.com/wanted-pre-onboarding-frontend-6/Assign-1/wiki/%EC%BB%A4%EB%B0%8B-%EC%BB%A8%EB%B2%A4%EC%85%98-%EB%B0%8F-%EC%BD%94%EB%94%A9-%EC%BB%A8%EB%B2%A4%EC%85%98)
 
-## Learn More
+## 📌 디자인 시안
+[LINK (designed by 김성용)](https://www.figma.com/file/55oSEG2YGeBtfyCHRy5B8k/Untitled?node-id=0%3A1)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📌 프로젝트 구조
 
-To learn React, check out the [React documentation](https://reactjs.org/).
->>>>>>> 0e972a6 (Initialize project using Create React App)
+<details>
+<summary>open</summary>
+
+```
+├─apis
+├─assets
+│  ├─font
+│  └─img
+├─components
+│  ├─content
+│  ├─layout
+│  │  ├─footer
+│  │  ├─header
+│  │  │  └─search
+│  │  └─sidebar
+│  └─spinner
+├─hooks
+├─pages
+│  ├─home
+│  │  └─components
+│  │      └─homeMovieList
+│  │          ├─content
+│  │          └─sidebar
+│  ├─movieDetail
+│  │  └─components
+│  ├─nowPlaying
+│  └─search
+├─queries
+│  └─movie
+├─styles
+└─types
+    ├─api
+    └─style
+```
+
+</details>
+
+## 📌기술 스택
+ 
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) 
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
+![](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+
+## 📌기능 목록 명세
+
+### ✔ 이슈 목록 가져오기 API 활용
+
+-   Context API를 활용한 API 연동
+-   데이터 요청 중 로딩 표시
+
+### ✔ open 상태의 이슈 중 코멘트가 많은 순으로 정렬
+
+-   지정된 조건(open 상태, 코멘트 많은 순)에 맞게 데이터 요청 및 표시
+
+### ✔ 각 행에는 ‘이슈번호, 이슈제목, 작성자, 작성일, 코멘트수’를 표시
+
+-   UI는 데스크톱, 모바일에서 보았을 때 모두 읽기 편하게 구현
+
+
+### ✔ 다섯번째 셀에는 광고 이미지 출력
+
+-   광고 이미지 클릭 시 https://thingsflow.com/ko/home로 이동
+
+### ✔ 화면을 아래로 스크롤 할 시 이슈 목록 추가 로딩(인피니티 스크롤)
+
+
+### ✔ 이슈의 상세 내용 표시
+
+-   이슈번호, 이슈제목, 작성자, 작성일, 코멘트 수, 작성자 프로필 이미지, 본문' 표시
+
+### ✔ 공통 헤더
+
+-   두 페이지는 공통 헤더를 공유
+-   헤더에는 Organization Name / Repository Name이 표시
+
+## 📌 Best Practice
+
+<!-- ### 💡 React Query 채택 이유
+
+fetching, caching, user state 업데이트 등을 리액트 애플리케이션에서 처리할 때 편리하고, 이번 과제의 요구 사항인 infinite scroll 구현 기능(useInfiniteQuery) 또한 제공하기 때문에 채택했습니다. -->
+
+### 💡 styled components 스타일 코드 컴포넌트 내에 배치
+
+응집도를 우선시 하여 컴포넌트 구현 코드와 같이 배치하였습니다.
