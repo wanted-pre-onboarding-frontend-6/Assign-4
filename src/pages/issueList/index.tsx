@@ -3,10 +3,9 @@ import { useIssueDispatch, useIssueState } from 'context/IssueContext';
 import useObServe from 'hooks/useObserve';
 import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { media } from 'styles/media';
 import IssueCard from './components/card/IssueCard';
 import ThinksFlowLogo from 'assets/img/thingsflow.png';
-import { Link } from 'react-router-dom';
+import { IssueType } from 'types/api/api.type';
 
 const IssueListPage = () => {
   const { issueList } = useIssueState();
@@ -28,7 +27,7 @@ const IssueListPage = () => {
 
   return (
     <IssueListPageWrapper>
-      {issueList.data.map((list: any, index: number) => (
+      {issueList.data.map((list: IssueType, index: number) => (
         <div key={list.id}>
           <a href="https://thingsflow.com/ko/home" target={'_blink'}>
             <LogoImageContainer>

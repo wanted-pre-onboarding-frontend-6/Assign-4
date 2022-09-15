@@ -1,3 +1,4 @@
+import PageLoading from 'components/Loading/Loading';
 import { Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import routes from './Path';
@@ -6,7 +7,7 @@ const Routers = () => {
   const routing = routes();
   return (
     <BrowserRouter>
-      <Suspense fallback={<div></div>}>
+      <Suspense fallback={<PageLoading />}>
         <Routes>
           {routing.map(({ path, element, children }) => {
             return (

@@ -2,10 +2,11 @@ import { FC, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 import { useMedia } from 'hooks/useMedia';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { IssueType } from 'types/api/api.type';
 
 interface IssueCardProps {
-  data: any;
+  data: IssueType;
 }
 
 const IssueCard: FC<IssueCardProps> = ({ data }) => {
