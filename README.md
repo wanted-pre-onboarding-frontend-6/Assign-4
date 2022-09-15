@@ -72,35 +72,37 @@ $ npm run start
 <summary>open</summary>
 
 ```
-├─apis
+├─api
 ├─assets
 │  ├─font
 │  └─img
 ├─components
-│  ├─content
+│  ├─Alert
+│  ├─Button
+│  ├─Input
 │  ├─layout
-│  │  ├─footer
 │  │  ├─header
-│  │  │  └─search
-│  │  └─sidebar
-│  └─spinner
+│  │  └─side
+│  │      ├─content
+│  │      │  └─list
+│  │      └─header
+│  └─spiner
+├─context
+├─conts
 ├─hooks
 ├─pages
-│  ├─home
+│  ├─issueDetail
 │  │  └─components
-│  │      └─homeMovieList
-│  │          ├─content
-│  │          └─sidebar
-│  ├─movieDetail
+│  ├─issueList
 │  │  └─components
-│  ├─nowPlaying
-│  └─search
-├─queries
-│  └─movie
+│  │      └─card
+│  └─mainHome
+├─router
 ├─styles
-└─types
-    ├─api
-    └─style
+├─types
+│  ├─api
+│  └─style
+└─utils
 ```
 
 </details>
