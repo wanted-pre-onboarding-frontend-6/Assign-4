@@ -2,10 +2,6 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
-// list type
-
-// menu type
-
 const SidebarContent = () => {
   const pathName = useLocation().pathname.split('/');
   const MenuPathName = useRef(pathName[1]);
