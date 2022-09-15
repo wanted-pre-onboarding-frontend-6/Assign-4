@@ -1,3 +1,4 @@
+import { REPO_NAME, REPO_OWNER } from 'conts/repoKeys';
 import styled from 'styled-components';
 
 const MainLayoutHeader = () => {
@@ -5,9 +6,9 @@ const MainLayoutHeader = () => {
     <LayoutHeaderWrapper>
       Repository
       <HeaderTitleSpan>
-        angular
+        {REPO_OWNER}
         <span>/</span>
-        <span>angular-cli</span>
+        <span>{REPO_NAME}</span>
       </HeaderTitleSpan>
     </LayoutHeaderWrapper>
   );

@@ -1,6 +1,7 @@
 import { useMedia } from 'hooks/useMedia';
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
+import { media } from 'styles/media';
 import MainLayoutHeader from './header/Header';
 import MainLayoutSidebar from './side/Sidebar';
 
@@ -28,4 +29,8 @@ const MainLayoutContainer = styled.div`
   min-height: calc(100vh);
   max-height: calc(100vh);
   overflow-y: auto;
+
+  ${media.desktopM} {
+    width: 100%;
+  }
 `;

@@ -1,4 +1,4 @@
-import MainLayout from 'components/layout';
+import MainLayout from 'components/Layout';
 import MainHomePage from 'pages/mainHome/MainHome';
 import { lazy } from 'react';
 import { RouteObject } from 'react-router';

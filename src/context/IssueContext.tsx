@@ -11,6 +11,7 @@ type StateType = {
 type ServiceType = {
   getIssueList: (page: number, sort: string, direction: string) => Promise<void>;
   getIssueDetail: (issueId: string | undefined) => Promise<void>;
+  resetIssueList: () => Promise<void>;
 };
 
 interface InitailStateType {
@@ -135,9 +136,14 @@ const IssueProvider = ({ IssueService, children }: { IssueService: any; children
     }
   };
 
+  const resetIssueList = async () => {
+    dispatch({ type: ISSUE_LIST_RESET });
+  };
+
   const service = {
     getIssueList,
     getIssueDetail,
+    resetIssueList,
   };
 
   return (

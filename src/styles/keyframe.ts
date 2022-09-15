@@ -1,2 +1,6 @@
 import { keyframes } from 'styled-components';
-export const keyframeExample = '';
+
+export const spin = keyframes`
+to{
+  transform: rotate(360deg);
+}`;

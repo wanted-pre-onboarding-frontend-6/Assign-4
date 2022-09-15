@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 // list type
@@ -22,16 +22,6 @@ const SidebarContent = () => {
           click: false,
           listPath: 'get-list-issues',
         },
-        {
-          listTitle: '- create Issue',
-          click: false,
-          listPath: 'create-issue',
-        },
-        {
-          listTitle: '- updtate Issue',
-          click: false,
-          listPath: 'update-issue',
-        },
       ],
     },
   ]);
@@ -53,10 +43,6 @@ const SidebarContent = () => {
     setSideMenuList(menuList);
   }, []);
 
-  // menu click handler
-
-  // list click handler
-
   return (
     <SidebarMenuWrapper>
       {sideMenuList.map((menu: any) => (
@@ -64,9 +50,11 @@ const SidebarContent = () => {
           <p>{menu.title}</p>
           <SidebarListWrapper>
             {menu.list.map((list: any) => (
-              <li key={list.listTitle}>
-                <p>{list.listTitle}</p>
-              </li>
+              <Link to={'/' + menu.path + '/' + list.listPath} key={list.listTitle}>
+                <li>
+                  <p>{list.listTitle}</p>
+                </li>
+              </Link>
             ))}
           </SidebarListWrapper>
         </li>
@@ -90,7 +78,7 @@ const SidebarMenuWrapper = styled.ul`
 
 const SidebarListWrapper = styled.ul`
   width: 100%;
-  & > li {
+  & > a > li {
     font-size: ${({ theme }) => theme.fontSize.xLarge};
     font-weight: ${({ theme }) => theme.fontWeight.thin};
     color: ${({ theme }) => theme.palette.fontColor};
