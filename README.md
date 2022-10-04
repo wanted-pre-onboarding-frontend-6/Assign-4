@@ -11,7 +11,7 @@ https://github-issue-list-fe-5.netlify.app/
 
 ## 📌 프로젝트 설치 및 시작
 
-#### 프로젝트 클론
+#### 프로젝트 클론.
 
 ```shell
 $ git clone https://github.com/wanted-pre-onboarding-frontend-6/Assign-4.git
